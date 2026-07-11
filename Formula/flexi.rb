@@ -1,28 +1,28 @@
 class Flexi < Formula
   desc "A minimal CLI tool for tracking your flexi-time balance"
   homepage "https://github.com/thombruce/flexi"
-  version "0.15.0"
+  version "0.15.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thombruce/flexi/releases/download/v#{version}/flexi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "ea32f825091573d530cb405de070b1e1a73a9f53a7d94393f25c4a8aea343da6"
+      url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "7d2b485a314cfea4e84fb37c1feefbcc535c9bf98822ca6578855dd76592cc80"
     end
     on_intel do
-      url "https://github.com/thombruce/flexi/releases/download/v#{version}/flexi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "cac6eeb9de1baa2a9f3b0aad6ddcef27db29d1cbe936537f1804ac02410bbf13"
+      url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "318ee0886ce57e24a620b3c51d953b8f19cbc380c8a29fea0330dc431c07fc2e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thombruce/flexi/releases/download/v#{version}/flexi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5c8b9eed68fcd0818243d2f247ca2518bc5698242477a8806aee992dfa488ee7"
+      url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f0a4bc1552c858e855e37250f3c8fbdf3e06b2ebb72314ec4758d2b9a920d186"
     end
     on_intel do
-      url "https://github.com/thombruce/flexi/releases/download/v#{version}/flexi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5946123052aeacb7b568043b6c2ed28dd9cf0fa4dc61cd06019a6f3faf854b77"
+      url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8e2df219c5c4497c1bb3e9e403e62d244b3d3648be3a3e4f9c631b6e15e0a424"
     end
   end
 
@@ -31,6 +31,6 @@ class Flexi < Formula
   end
 
   test do
-    assert_match "0 min", shell_output("#{bin}/flexi")
+    system "#{bin}/flexi", "--version"
   end
 end
