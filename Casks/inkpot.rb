@@ -12,8 +12,6 @@ cask "inkpot" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :catalina"
-
   app "inkpot.app"
 
   zap trash: [
