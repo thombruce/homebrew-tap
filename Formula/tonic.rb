@@ -1,28 +1,28 @@
 class Tonic < Formula
   desc "A git worktree companion"
   homepage "https://github.com/thombruce/tonic"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/thombruce/tonic/releases/download/v#{version}/tonic-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d4bc506a5b388e08717d5d94b1ef9e770fc7fc47c7cbe4a9d657d032567480cf"
+      sha256 "583b5f832f53fed8267197b69a7d4341f8823dfa063b94a3649704f6873d89e0"
     end
     on_intel do
       url "https://github.com/thombruce/tonic/releases/download/v#{version}/tonic-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c52b466153bb5483a8fd7a3137ef3ed567f21a106987ae94b2f4a21219efa9f3"
+      sha256 "087655a45738136c07ae629b429747aebfa9655e4e9118af48449133d6a9337d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thombruce/tonic/releases/download/v#{version}/tonic-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f2ccbfe9a19f359c0cade5e9274ce94cb91b0a0bc95958381aa7445291fdf6df"
+      sha256 "8c749c3da3859f6bed5c2ba78e5e674e825d5806542278957f12c58e9a6f872e"
     end
     on_intel do
       url "https://github.com/thombruce/tonic/releases/download/v#{version}/tonic-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "db488e7bd69267fae0b07307ae689e3c78da25af5b7dfc4f3754bbe86b7df68e"
+      sha256 "65cb612c2891695cd010a6ec11b56bb7f5b4203ac40582ae9b8249d1acfe6ec8"
     end
   end
 
