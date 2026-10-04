@@ -1,6 +1,6 @@
 cask "inkpot" do
-  version "0.14.0"
-  sha256 "e53a83b9e9457482d2441374d89d3b44a06f5f0674d360f963b204bbdac99488"
+  version "0.15.0"
+  sha256 "d3dba0c4a2df41b12acef21f4e7eda62e95970370c1bbab9ab5b1355e839d9dd"
 
   url "https://github.com/thombruce/inkpot/releases/download/v#{version}/inkpot_#{version}_universal.dmg"
   name "inkpot"
