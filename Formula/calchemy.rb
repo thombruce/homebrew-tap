@@ -1,28 +1,28 @@
 class Calchemy < Formula
   desc "A minimal plaintext calendar and appointment book for the command line"
   homepage "https://github.com/thombruce/flexi"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/calchemy-v#{version}/calchemy-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "e8e0b6eb4a3001f411cff96c0ec2071ed6e80dc1d587a04e1a4ee176255b55ee"
+      sha256 "9845296f6cae7a82ae005892221f15b56278043b6266bd22e8c6c398b731b850"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/calchemy-v#{version}/calchemy-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "16a887e8793d3aedefe495d556644eeaa69091e232098838f7e2a30780b26493"
+      sha256 "d2090bcf04fb47e8816d9fd1d8bb73b3147062de2b412904f89744e6deacb617"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/calchemy-v#{version}/calchemy-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c712a45bc62c248219761560dd2a310e90c9afd9b8249b9780f8b1f91ae1538d"
+      sha256 "dbf686065bacc2cd0c7496b8bd7fe8160591e1fd54a351e42c0c6ec3525e8831"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/calchemy-v#{version}/calchemy-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cc13fd19adae0cfa3cb136ec24560168619fc55b67da09653a93ddc306ed1bc9"
+      sha256 "0743b687706bcb280146057bb324cff0930de79ecd29f113add9ca792b59cd70"
     end
   end
 
