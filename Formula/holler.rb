@@ -1,28 +1,28 @@
 class Holler < Formula
   desc "A minimal plaintext contacts / rolodex for the command line"
   homepage "https://github.com/thombruce/flexi"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/holler-v#{version}/holler-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "be80902cc3f8d2b67f83effc9f0beafce5f707b7f13daebf463c3ab59d6c7ca2"
+      sha256 "ddd42fbca78ee8e787ce2f19064cd88059e416eeadd0ee83c9fa51a112945731"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/holler-v#{version}/holler-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "e69e8ffa083a2c90e0cb0f0b47da13fff7bb402778e33e3293bd1d59fb2e288d"
+      sha256 "3bbff066b14435cc8521edbf637985a41ff45d474192f2153e603a65323d6016"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/holler-v#{version}/holler-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d90e25d2b2bc5d2d58fc874d55beda24aa5320bf211805937c8751686b9bc8bd"
+      sha256 "879779029eefa8a0d6042504859adecca779ee5ac191798d47c9e66e403505d9"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/holler-v#{version}/holler-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "64ea0673f1c5164ff00009da9fa3db6f6628e7c2cf88666d0510d236be3473ce"
+      sha256 "4d668a067a50d5883f84d46b2b9e19e8c47b6bde3f2d1908204148de1118a194"
     end
   end
 
