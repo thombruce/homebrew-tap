@@ -1,28 +1,28 @@
 class Clocking < Formula
   desc "A minimal CLI tool for logging your working hours"
   homepage "https://github.com/thombruce/flexi"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/clocking-v#{version}/clocking-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "aa90ccf4d305defb65912ec89d8db8f2baafbc2b1fb9d136e15c4205067810e8"
+      sha256 "c8b2a04245d61ab2c02a717dcb065605b6de0d68c73bb43691032fe2e470d41a"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/clocking-v#{version}/clocking-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "49e0dd96fe633a2375b15255bd1fa46e0ca79ef2e3700f5e1b18d7049051ff12"
+      sha256 "2913d99a384f37ed9050e641438340a5b65ec383879a0e698172abb450bf3293"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/clocking-v#{version}/clocking-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c109c3ef0bbc72dbe8c665f7e43de59819ae79f3b2fcce3dab4e85058e52591f"
+      sha256 "367688a6a22594753c635f5bc73413f261ca890bc9bd5cd86e9b4d0118011d66"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/clocking-v#{version}/clocking-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9281db8ac9b1c24c1459a7efac753506ada1f466e1734f973844486e4424d6f8"
+      sha256 "dda41ff281cd0740b77731a2804960f17b1c8c17fbf3248a0ebf4906fb136074"
     end
   end
 
