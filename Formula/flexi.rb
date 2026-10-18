@@ -1,28 +1,28 @@
 class Flexi < Formula
   desc "A minimal CLI tool for tracking your flexi-time balance"
   homepage "https://github.com/thombruce/flexi"
-  version "0.17.0"
+  version "0.18.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "4068840da72457349ff552e74985ce45b52dc2d641685d01fa073f34de21fadd"
+      sha256 "fd18888985c240fed28d83073befeb582cab66020e4fdab3799c8c475d3bf37b"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "1e3c4cebe64e28b6ba73802d2e493fe2702a21aaf2b627c55d41640005a811d2"
+      sha256 "cde8c73e7c9f401659f56fee662a6dc0270ad2588ad86babed705c9998e25572"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5c09cb8dff71d1f291bcc0b8a8101836696a366f0b141cd3e991ca6275798142"
+      sha256 "00793860afd9fbc9261dfaf1cc85c41cecc6fdb21981acf826dea2eccfff0c45"
     end
     on_intel do
       url "https://github.com/thombruce/flexi/releases/download/flexi-v#{version}/flexi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "64e48ec81b8c1a71927201c83b3940cf68cf5ca252df78b90d856c4503e1df09"
+      sha256 "a2246dae8d20f55f5f4973b1e10150b8ab45839ea4810b6df8aeaf6a946fbf4d"
     end
   end
 
